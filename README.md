@@ -140,9 +140,8 @@ For manual installation, you'll need to install the dependencies and build the p
     ```
     python3 -m venv .venv
     source .venv/bin/activate
-    pip install meson
     pip install -r requirements.txt
-    meson setup --prefix /usr build
+    meson setup --prefix /usr build <!--or 'meson setup --prefix /usr/local build' to install in /usr/local/bin-->
     sudo ninja -C build install
     
     # Uninstall waydroid helper
@@ -165,7 +164,6 @@ For manual installation, you'll need to install the dependencies and build the p
     ```
     python3 -m venv .venv
     source .venv/bin/activate
-    pip install meson
     pip install -r requirements.txt
     meson setup --prefix /usr build
     sudo ninja -C build install
